@@ -1,3 +1,5 @@
+// 在 express 框架中集成 websocket
+
 var express = require('express')
 var app = express()
 var wsServer = require('express-ws')(app)
@@ -14,6 +16,6 @@ app.ws('/test-ws', (ws, req) => {
 
 app.use('/websocket', webSocket)
 
-app.listen(3000, () => {
-  console.log('正在监听 3000 端口...')
+app.listen(9700, () => {
+  console.log('正在监听 9700 端口...')
 })

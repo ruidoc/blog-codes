@@ -10,7 +10,7 @@
     <script>
       var ws = new WebSocket('ws://localhost:8080')
       ws.onopen = evt => {
-        console.log('客户端已连接：')
+        console.log('客户端已连接')
       }
       ws.onmessage = function (evt) {
         console.log(evt)

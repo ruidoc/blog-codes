@@ -1,3 +1,5 @@
+// ws 模块服务端
+
 const { WebSocketServer } = require('ws')
 
 const wss = new WebSocketServer({
